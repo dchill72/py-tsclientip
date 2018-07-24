@@ -8,7 +8,9 @@ import sys
 def getMyIp():
     if 'utun1' in netifaces.interfaces():
         return netifaces.ifaddresses('utun1')[netifaces.AF_INET][0]['addr']
-    return netifaces.ifaddresses('en0')[netifaces.AF_INET][0]['addr']
+
+    primaryInteface = netifaces.gateways()['default'][netifaces.AF_INET][1]
+    return netifaces.ifaddresses(primaryInteface)[netifaces.AF_INET][0]['addr']
 
 
 def main():
