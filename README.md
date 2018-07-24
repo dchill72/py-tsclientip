@@ -20,4 +20,5 @@ Ensure that your Tanium Server has winrm enabled: https://docs.microsoft.com/en-
 
 In your terminal run:
 
-`python py-tsclientip.py 'server_ip_addresss_or_fqdn' 'administrator' 'password'`
+`python py-tsclientip.py 'server_ip_addresss_or_fqdn' 'administrator' 'password' 'integrity-monitor-scheduledtask'`
+replacing 'integrity-monitor-scheduledtask' with the plugin directory used by your module.
