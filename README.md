@@ -1,8 +1,10 @@
 # py-tsclientip
 
-## Why?
+## What?
 
-This script will attempt to determine if you're connected to VPN, and will use either `en0` or `utun1` as appropriate.
+This script will attempt to determine if you're connected to VPN, and will use either `en0` or `utun1` as appropriate.  It will write the correct IP address into the invoker.js file located in:
+
+`C:\\Program Files\\Tanium\\Tanium Module Server\\plugins\\content\\integrity-monitor-scheduledtask\\invoker.js`
 
 ## Requirements
 
