@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 import winrm
 import netifaces
 import sys
